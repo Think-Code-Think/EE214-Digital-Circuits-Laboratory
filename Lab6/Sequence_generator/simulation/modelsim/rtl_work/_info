@@ -1,0 +1,310 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/simulation/modelsim
+Edff_reset
+Z1 w1694770054
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Seqence_generator.vhdl
+Z5 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Seqence_generator.vhdl
+l0
+L35
+VWZ=4lzRVNHzAJ:Lj[<XeC2
+!s100 Td6JUgVYoHT<`4z601iKV0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1694772118
+!i10b 1
+Z8 !s108 1694772118.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Seqence_generator.vhdl|
+Z10 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Seqence_generator.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 9 dff_reset 0 22 WZ=4lzRVNHzAJ:Lj[<XeC2
+l39
+L38
+V_PIkhDTM^IGb[HJNZchFg2
+!s100 0BZYYP=FS;CInACZ;mD_?1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L14
+VM;W>XOb93`_Ni?6QDiz@V3
+!s100 2XLF0eWP6APBnmB[HG6Si3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 M;W>XOb93`_Ni?6QDiz@V3
+l17
+L16
+V;nYD>`BX`TieJP@2`m36j2
+!s100 HkI5_8P?FlDK=BLm3;oR83
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1694708865
+R2
+R3
+R0
+Z14 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/DUT.vhdl
+Z15 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/DUT.vhdl
+l0
+L7
+V=?I_;hj6_9b4bF6aTFjGR2
+!s100 83ciBECefIff_d=UEjm0^0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/DUT.vhdl|
+Z17 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 =?I_;hj6_9b4bF6aTFjGR2
+l17
+L12
+Vl8VoF@8`@b[4KUY[9TBgi1
+!s100 ;ZP`AXVLjb0CH84QkINf:3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L3
+V<B[@b31IaHo;^iHaN2:Cm0
+!s100 DOe:b7AGBQTBz1c5JgcHM3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_generator_stru_dataflow
+R1
+Z18 DPx4 work 9 flipflops 0 22 <B[@b31IaHo;^iHaN2:Cm0
+R2
+R3
+R0
+R4
+R5
+l0
+L56
+V>KQQfdeLaL@2PUbeRgiSZ1
+!s100 ^a>JoWG?b];ZFMmVJAU[@0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R18
+R2
+R3
+DEx4 work 32 sequence_generator_stru_dataflow 0 22 >KQQfdeLaL@2PUbeRgiSZ1
+l64
+L61
+VRjQKZdP_9l<@B@LDLb2m43
+!s100 gn83l2oPiU^W75ah9E;8?2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z19 w1694708918
+R3
+R2
+R0
+Z20 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Testbench.vhdl
+Z21 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Testbench.vhdl|
+Z23 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+Vf3hR06N2RGUODQcza;L>I3
+!s100 dD0YcHLNVK^T<[OGFHoM12
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Etoplevel
+Z24 w1694770336
+Z25 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z26 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/TopLevel.vhdl
+Z27 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/TopLevel.vhdl
+l0
+L5
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/TopLevel.vhdl|
+Z29 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R25
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+l75
+L13
+V32RB<gRRn7a7IQAnN8EGK1
+!s100 a`1c?22oKNPD91BY`hzAE1
+R6
+31
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Ev_jtag
+Z30 w1693406831
+R25
+R2
+R3
+R0
+Z31 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+Z32 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+l0
+L9
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+Z33 !s110 1694772117
+!i10b 1
+Z34 !s108 1694772117.000000
+Z35 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+Z36 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab6/Sequence_generator/Scan_Chain_Files/Scan_Chain_Files/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R25
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+l85
+L44
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R11
+R12

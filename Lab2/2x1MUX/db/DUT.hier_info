@@ -1,0 +1,37 @@
+|DUT
+input_vector[0] => MUX2x1:add_instance.S
+input_vector[1] => MUX2x1:add_instance.I1
+input_vector[2] => MUX2x1:add_instance.I0
+output_vector[0] <= MUX2x1:add_instance.Y
+
+
+|DUT|MUX2x1:add_instance
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX2x1:add_instance|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX2x1:add_instance|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX2x1:add_instance|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX2x1:add_instance|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

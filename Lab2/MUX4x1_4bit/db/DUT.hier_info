@@ -1,0 +1,472 @@
+|DUT
+input_vector[0] => MUX4x1_4bit:add_instance.S0
+input_vector[1] => MUX4x1_4bit:add_instance.S1
+input_vector[2] => MUX4x1_4bit:add_instance.A0
+input_vector[3] => MUX4x1_4bit:add_instance.A1
+input_vector[4] => MUX4x1_4bit:add_instance.A2
+input_vector[5] => MUX4x1_4bit:add_instance.A3
+input_vector[6] => MUX4x1_4bit:add_instance.B0
+input_vector[7] => MUX4x1_4bit:add_instance.B1
+input_vector[8] => MUX4x1_4bit:add_instance.B2
+input_vector[9] => MUX4x1_4bit:add_instance.B3
+input_vector[10] => MUX4x1_4bit:add_instance.C0
+input_vector[11] => MUX4x1_4bit:add_instance.C1
+input_vector[12] => MUX4x1_4bit:add_instance.C2
+input_vector[13] => MUX4x1_4bit:add_instance.C3
+input_vector[14] => MUX4x1_4bit:add_instance.D0
+input_vector[15] => MUX4x1_4bit:add_instance.D1
+input_vector[16] => MUX4x1_4bit:add_instance.D2
+input_vector[17] => MUX4x1_4bit:add_instance.D3
+output_vector[0] << MUX4x1_4bit:add_instance.Y0
+output_vector[1] << MUX4x1_4bit:add_instance.Y1
+output_vector[2] << MUX4x1_4bit:add_instance.Y2
+output_vector[3] << MUX4x1_4bit:add_instance.Y3
+
+
+|DUT|MUX4x1_4bit:add_instance
+D3 => MUX4x1:MUX1.I4
+D2 => MUX4x1:MUX2.I4
+D1 => MUX4x1:MUX3.I4
+D0 => MUX4x1:MUX4.I4
+C3 => MUX4x1:MUX1.I3
+C2 => MUX4x1:MUX2.I3
+C1 => MUX4x1:MUX3.I3
+C0 => MUX4x1:MUX4.I3
+B3 => MUX4x1:MUX1.I2
+B2 => MUX4x1:MUX2.I2
+B1 => MUX4x1:MUX3.I2
+B0 => MUX4x1:MUX4.I2
+A3 => MUX4x1:MUX1.I1
+A2 => MUX4x1:MUX2.I1
+A1 => MUX4x1:MUX3.I1
+A0 => MUX4x1:MUX4.I1
+S1 => MUX4x1:MUX1.S2
+S1 => MUX4x1:MUX2.S2
+S1 => MUX4x1:MUX3.S2
+S1 => MUX4x1:MUX4.S2
+S0 => MUX4x1:MUX1.S1
+S0 => MUX4x1:MUX2.S1
+S0 => MUX4x1:MUX3.S1
+S0 => MUX4x1:MUX4.S1
+Y3 <= MUX4x1:MUX1.Y
+Y2 <= MUX4x1:MUX2.Y
+Y1 <= MUX4x1:MUX3.Y
+Y0 <= MUX4x1:MUX4.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1
+I1 => MUX2x1:MUX1.I0
+I2 => MUX2x1:MUX1.I1
+I3 => MUX2x1:MUX2.I0
+I4 => MUX2x1:MUX2.I1
+S1 => MUX2x1:MUX1.S
+S1 => MUX2x1:MUX2.S
+S2 => MUX2x1:MUX3.S
+Y <= MUX2x1:MUX3.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX1
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX1|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX1|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX1|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX2
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX2|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX2|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX2|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX3
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX3|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX3|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX3|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX1|MUX2x1:MUX3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2
+I1 => MUX2x1:MUX1.I0
+I2 => MUX2x1:MUX1.I1
+I3 => MUX2x1:MUX2.I0
+I4 => MUX2x1:MUX2.I1
+S1 => MUX2x1:MUX1.S
+S1 => MUX2x1:MUX2.S
+S2 => MUX2x1:MUX3.S
+Y <= MUX2x1:MUX3.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX1
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX1|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX1|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX1|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX2
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX2|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX2|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX2|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX3
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX3|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX3|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX3|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX2|MUX2x1:MUX3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3
+I1 => MUX2x1:MUX1.I0
+I2 => MUX2x1:MUX1.I1
+I3 => MUX2x1:MUX2.I0
+I4 => MUX2x1:MUX2.I1
+S1 => MUX2x1:MUX1.S
+S1 => MUX2x1:MUX2.S
+S2 => MUX2x1:MUX3.S
+Y <= MUX2x1:MUX3.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX1
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX1|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX1|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX1|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX2
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX2|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX2|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX2|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX3
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX3|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX3|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX3|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX3|MUX2x1:MUX3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4
+I1 => MUX2x1:MUX1.I0
+I2 => MUX2x1:MUX1.I1
+I3 => MUX2x1:MUX2.I0
+I4 => MUX2x1:MUX2.I1
+S1 => MUX2x1:MUX1.S
+S1 => MUX2x1:MUX2.S
+S2 => MUX2x1:MUX3.S
+Y <= MUX2x1:MUX3.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX1
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX1|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX1|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX1|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX2
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX2|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX2|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX2|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX3
+I0 => AND_2:AND1.A
+I1 => AND_2:AND2.A
+S => INVERTER:NOT1.A
+S => AND_2:AND2.B
+Y <= OR_2:OR1.Y
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX3|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX3|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX3|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MUX4x1_4bit:add_instance|MUX4x1:MUX4|MUX2x1:MUX3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

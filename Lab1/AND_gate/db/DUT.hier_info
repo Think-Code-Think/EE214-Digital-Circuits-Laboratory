@@ -1,0 +1,32 @@
+|DUT
+input_vector[0] => AND_gate:add_instance.B
+input_vector[1] => AND_gate:add_instance.A
+output_vector[0] << AND_gate:add_instance.Y
+
+
+|DUT|AND_gate:add_instance
+A => NOR_2:NOR1.A
+A => NOR_2:NOR1.B
+B => NOR_2:NOR2.A
+B => NOR_2:NOR2.B
+Y <= NOR_2:NOR3.Y
+
+
+|DUT|AND_gate:add_instance|NOR_2:NOR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AND_gate:add_instance|NOR_2:NOR2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AND_gate:add_instance|NOR_2:NOR3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

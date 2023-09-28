@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity FULL_SUBTRACTOR is
+port (A, B,Bin: in std_logic; D,Bout: out std_logic);
+end entity FULL_SUBTRACTOR;
+
+architecture Struct of FULL_SUBTRACTOR is
+signal B_BAR : std_logic;
+
+component HALF_SUBTRACTOR is
+port (A, B: in std_logic; D,C: out std_logic);
+end component HALF_SUBTRACTOR;
+begin
+  --component instances
+  
+  XOR1 : XOR_GATE port map (A => A, B => B, Y => D);
+  NOR1 : NOR_2 port map (A=>B, B=>B,Y=>B_BAR);
+  NOR2 : NOR_2 port map (A => A, B => B_BAR, Y =>C);
+  
+  
+  end Struct;
