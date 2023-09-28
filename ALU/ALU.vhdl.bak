@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity alu_beh is
+  port (
+    A: in std_logic_vector(3 downto 0);
+    B: in std_logic_vector(3 downto 0);
+    sel: in std_logic_vector(1 downto 0);
+    op: out std_logic_vector(7 downto 0)
+  );
+end alu_beh;
+
+architecture a1 of alu_beh is
+  function sub(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+    return std_logic_vector is
+    variable diff : std_logic_vector(3 downto 0) := (others => '0');
+    variable carry: std_logic := '0';
+  begin
+    for i in 3 downto 0 loop
+      diff(i) := A(i) xor B(i) xor carry;
+      carry := (A(i) and B(i)) or ((A(i) or B(i)) and carry);
+    end loop;
+    return diff;
+  end sub;
+
+begin
+  alu: process(A, B, sel)
+  begin
+    case sel is
+      when "00" =>
+        -- Concatenate two 4-bit inputs A and B
+        op <= A & B;
+      when "01" =>
+        -- Performs A - B operation
+        op <= sub(A, B);
+      when "10" =>
+        -- Performs A XOR B operation
+        op <= A xor B;
+      when "11" =>
+        -- Produces output as 2 * A
+        op <= "00" & A;
+      when others =>
+        op <= (others => '0');
+    end case;
+  end process; -- alu
+end a1; -- a1

@@ -1,0 +1,228 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/simulation/modelsim
+Edff_reset
+Z1 w1694708864
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/d_flip_flop.vhdl
+Z5 FD:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/d_flip_flop.vhdl
+l0
+L43
+VndHfD4eGlT1^gUKK=8MTT3
+!s100 HJV`>bZ99J402JKmz7@O[1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1694709025
+!i10b 1
+Z8 !s108 1694709025.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/d_flip_flop.vhdl|
+Z10 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/d_flip_flop.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 9 dff_reset 0 22 ndHfD4eGlT1^gUKK=8MTT3
+l47
+L46
+VdYbL_f0]2SYB^iBNHgoF91
+!s100 QDN]VBcY>ER_UeB8><]^J2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L20
+VZ^SV3]3a3JVAN@c1Wgi7M2
+!s100 e8QhB5eBo@83m3?IMLVZ60
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 Z^SV3]3a3JVAN@c1Wgi7M2
+l25
+L24
+VF=SW>lzFW<`T?7NFeRc_P1
+!s100 oY9Y8>Y5;VJY`HGhf<0GN1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1694708865
+R2
+R3
+R0
+Z14 8D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/DUT.vhdl
+Z15 FD:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/DUT.vhdl
+l0
+L7
+V=?I_;hj6_9b4bF6aTFjGR2
+!s100 83ciBECefIff_d=UEjm0^0
+R6
+31
+Z16 !s110 1694709024
+!i10b 1
+Z17 !s108 1694709024.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/DUT.vhdl|
+Z19 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 =?I_;hj6_9b4bF6aTFjGR2
+l17
+L12
+Vl8VoF@8`@b[4KUY[9TBgi1
+!s100 ;ZP`AXVLjb0CH84QkINf:3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L5
+VP109SO`SDGWU[S=g^5ni93
+!s100 cicMR>Aj8b5BF:VPIJR2@0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_generator_stru_dataflow
+R1
+Z20 DPx4 work 9 flipflops 0 22 P109SO`SDGWU[S=g^5ni93
+R2
+R3
+R0
+R4
+R5
+l0
+L64
+VVV;Miz^5?nK>l;ZK10Ca^1
+!s100 b1<3FP[cf;k[1ZIAS372X2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R20
+R2
+R3
+DEx4 work 32 sequence_generator_stru_dataflow 0 22 VV;Miz^5?nK>l;ZK10Ca^1
+l72
+L69
+V[A=KW[a557RJ7KIZbJDCl1
+!s100 LU07]d<I;N;<Yiz491QEC1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z21 w1694708918
+R3
+R2
+R0
+Z22 8D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/Testbench.vhdl
+Z23 FD:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/Testbench.vhdl|
+Z25 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/projects/d_flip_flop/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+Vf3hR06N2RGUODQcza;L>I3
+!s100 dD0YcHLNVK^T<[OGFHoM12
+R6
+31
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12
