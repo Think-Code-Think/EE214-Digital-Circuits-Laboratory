@@ -1,0 +1,469 @@
+|DUT
+input_vector[0] => Multiplier:add_instance.B0
+input_vector[1] => Multiplier:add_instance.B1
+input_vector[2] => Multiplier:add_instance.B2
+input_vector[3] => Multiplier:add_instance.A0
+input_vector[4] => Multiplier:add_instance.A1
+input_vector[5] => Multiplier:add_instance.A2
+input_vector[6] => Multiplier:add_instance.A3
+output_vector[0] << Multiplier:add_instance.M0
+output_vector[1] << Multiplier:add_instance.M1
+output_vector[2] << Multiplier:add_instance.M2
+output_vector[3] << Multiplier:add_instance.M3
+output_vector[4] << Multiplier:add_instance.M4
+output_vector[5] << Multiplier:add_instance.M5
+output_vector[6] << Multiplier:add_instance.M6
+
+
+|DUT|Multiplier:add_instance
+A3 => AND_2:AND4.A
+A3 => AND_2:AND8.A
+A3 => AND_2:AND12.A
+A2 => AND_2:AND3.A
+A2 => AND_2:AND7.A
+A2 => AND_2:AND11.A
+A1 => AND_2:AND2.A
+A1 => AND_2:AND6.A
+A1 => AND_2:AND10.A
+A0 => AND_2:AND1.A
+A0 => AND_2:AND5.A
+A0 => AND_2:AND9.A
+B2 => AND_2:AND9.B
+B2 => AND_2:AND10.B
+B2 => AND_2:AND11.B
+B2 => AND_2:AND12.B
+B1 => AND_2:AND5.B
+B1 => AND_2:AND6.B
+B1 => AND_2:AND7.B
+B1 => AND_2:AND8.B
+B0 => AND_2:AND1.B
+B0 => AND_2:AND2.B
+B0 => AND_2:AND3.B
+B0 => AND_2:AND4.B
+M6 <= FourbitAdderSubtractor:FourbitAdderSubtractor2.Cout
+M5 <= FourbitAdderSubtractor:FourbitAdderSubtractor2.S3
+M4 <= FourbitAdderSubtractor:FourbitAdderSubtractor2.S2
+M3 <= FourbitAdderSubtractor:FourbitAdderSubtractor2.S1
+M2 <= FourbitAdderSubtractor:FourbitAdderSubtractor2.S0
+M1 <= FourbitAdderSubtractor:FourbitAdderSubtractor1.S0
+M0 <= AND_2:AND1.Y
+
+
+|DUT|Multiplier:add_instance|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND6
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND7
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND8
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND9
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND10
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND11
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|AND_2:AND12
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1
+A3 => Full_adder:fulladder4.A
+A2 => Full_adder:fulladder3.A
+A1 => Full_adder:fulladder2.A
+A0 => Full_adder:fulladder1.A
+B3 => XOR_2:xor4.B
+B2 => XOR_2:xor3.B
+B1 => XOR_2:xor2.B
+B0 => XOR_2:xor1.B
+M => XOR_2:xor1.A
+M => Full_adder:fulladder1.C
+M => XOR_2:xor2.A
+M => XOR_2:xor3.A
+M => XOR_2:xor4.A
+Cout <= Full_adder:fulladder4.Cout
+S3 <= Full_adder:fulladder4.Sum
+S2 <= Full_adder:fulladder3.Sum
+S1 <= Full_adder:fulladder2.Sum
+S0 <= Full_adder:fulladder1.Sum
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder1
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder1|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder1|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|XOR_2:xor2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder2
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder2|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder2|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|XOR_2:xor3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder3
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder3|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder3|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|XOR_2:xor4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder4
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder4|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder4|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor1|Full_adder:fulladder4|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2
+A3 => Full_adder:fulladder4.A
+A2 => Full_adder:fulladder3.A
+A1 => Full_adder:fulladder2.A
+A0 => Full_adder:fulladder1.A
+B3 => XOR_2:xor4.B
+B2 => XOR_2:xor3.B
+B1 => XOR_2:xor2.B
+B0 => XOR_2:xor1.B
+M => XOR_2:xor1.A
+M => Full_adder:fulladder1.C
+M => XOR_2:xor2.A
+M => XOR_2:xor3.A
+M => XOR_2:xor4.A
+Cout <= Full_adder:fulladder4.Cout
+S3 <= Full_adder:fulladder4.Sum
+S2 <= Full_adder:fulladder3.Sum
+S1 <= Full_adder:fulladder2.Sum
+S0 <= Full_adder:fulladder1.Sum
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder1
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder1|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder1|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder1|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|XOR_2:xor2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder2
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder2|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder2|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder2|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|XOR_2:xor3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder3
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder3|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder3|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder3|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|XOR_2:xor4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder4
+A => HALF_ADDER:Half_adder1.A
+B => HALF_ADDER:Half_adder1.B
+C => HALF_ADDER:Half_adder2.B
+Sum <= HALF_ADDER:Half_adder2.S
+Cout <= OR_2:OR1.Y
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder4|HALF_ADDER:Half_adder1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder4|HALF_ADDER:Half_adder2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multiplier:add_instance|FourbitAdderSubtractor:FourbitAdderSubtractor2|Full_adder:fulladder4|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity FourbitAdderSubtractor is
+port (A, B,Bin: in std_logic; D,Bout: out std_logic);
+end entity FourbitAdderSubtractor;
+
+architecture Struct of FULL_SUBTRACTOR is
+signal I,J,K,L : std_logic;
+
+component Full_adder is
+port (A, B, C: in std_logic; Sum, Cout: out std_logic);
+end component Full_adder;
+begin
+  --component instances
+  
+  HALF_SUBTRACTOR1 : HALF_SUBTRACTOR port map (A => A, B => B, D => I,C=>J);
+  HALF_SUBTRACTOR2 : HALF_SUBTRACTOR port map (A=>I, B=>Bin,D=>D,C=>K);
+  NOR1 : NOR_2 port map (A => J, B => K, Y =>L);
+  NOR2 : NOR_2 port map (A => L, B => L, Y =>Bout);
+  
+  end Struct;
