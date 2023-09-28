@@ -1,0 +1,540 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/simulation/modelsim
+Eand_2
+Z1 w1695807328
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Gates.vhdl
+Z5 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Gates.vhdl
+l0
+L61
+VhNc4o@4iWJ5J]^KE3l>Sg2
+!s100 FVPgla4Lk4NdUm:Oj9;m<2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1695807759
+!i10b 1
+Z8 !s108 1695807759.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Gates.vhdl|
+Z10 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 hNc4o@4iWJ5J]^KE3l>Sg2
+l66
+L65
+V11ZJFzFOkM[^BUcJhHokb3
+!s100 jXIFgll?X3>1kO;@C5UlN2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_3
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L72
+VPVjb?HlLC5Qkk4Z@JZ@W90
+!s100 ;D0;CnOjEk2=4<k[kd9C:1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 and_3 0 22 PVjb?HlLC5Qkk4Z@JZ@W90
+l77
+L76
+VEGNfh57<=Tl:g;kblQO5X1
+!s100 c38UL^h7lfWYY[jK=8h>U2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebcd_x
+Z13 w1695807689
+Z14 DPx4 work 5 gates 0 22 lQiK0eM?UH<^la4ZY8;hH0
+R2
+R3
+R0
+Z15 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl
+Z16 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl
+l0
+L6
+V^0cWh=P4<<S9I9:25zTj<2
+!s100 z6UPIEDiKHk`^IkCm82jD3
+R6
+31
+Z17 !s110 1695807760
+!i10b 1
+Z18 !s108 1695807760.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl|
+Z20 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 5 bcd_x 0 22 ^0cWh=P4<<S9I9:25zTj<2
+l14
+L11
+V^]4i@zHeH3gPj@Z3NZ:Qa3
+!s100 mTQP75^G6I43SiI9XW:130
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Edut
+Z21 w1695807737
+R2
+R3
+R0
+Z22 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/DUT.vhdl
+Z23 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/DUT.vhdl
+l0
+L7
+VdCe`?IaUZDgnj75LeOiWW2
+!s100 ^1G`XCYl7>:nIDE5o<fPC2
+R6
+31
+R17
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/DUT.vhdl|
+Z25 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 dCe`?IaUZDgnj75LeOiWW2
+l18
+L12
+VC8W:4C1hB09R=Wa<>WUbT2
+!s100 loQdk?KMN0Q<eaLnL[_fh3
+R6
+31
+R17
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L3
+VlQiK0eM?UH<^la4ZY8;hH0
+!s100 oNQ?G7]DKfaM2BnSA@O9D0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L150
+V;i^hciIB_6IjnQ7k:JVf32
+!s100 =og@m:1GFGGj_g9ke[ZMn3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 ;i^hciIB_6IjnQ7k:JVf32
+l155
+L154
+V8d`>bAiGKW@l>kIR=<ae<3
+!s100 cHe=k:l4ZaBHJ^B0FRcnI2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L49
+V7fcMed?T;XLOf@iUiVH0J3
+!s100 nm@B]fH[YTmBzodc<J6Fd0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 7fcMed?T;XLOf@iUiVH0J3
+l54
+L53
+ViEj6>@[_cdnPG57f`38gN0
+!s100 ng@eWOg`K@B>S=;0A4Aff0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L83
+VND[QjiV7K<3j_el<5LVZc1
+!s100 EFn92=EYFjJKd30Cf6>kz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 ND[QjiV7K<3j_el<5LVZc1
+l88
+L87
+VHm5Z^ka<ElC7>590FB4JG1
+!s100 UGYadLah[9hGZ5i<aIJDC2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L116
+V5VIEXm9^;2B;FCTF]gQG52
+!s100 >5`?Yn8aIKKQFR8@C]?W=3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 5VIEXm9^;2B;FCTF]gQG52
+l121
+L120
+Vf;DC]O8]O`T_g2lW;8TVS0
+!s100 5CnG:U43X4`bUNH==8z0;2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L94
+VN1d?SabTa4299__WZZbL;3
+!s100 TY8jcT69gUhilZZBQRa4P1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 N1d?SabTa4299__WZZbL;3
+l99
+L98
+V]Rb:dY`UH2g6e=eATM@F51
+!s100 Q5[kHQnlBfi89aGY=W;^_1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_3
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L105
+VUo46;;F<Y4ziOFF<=_92G0
+!s100 O_Hf]aLn6633=4OQg8jTa2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_3 0 22 Uo46;;F<Y4ziOFF<=_92G0
+l110
+L109
+VhaRge:[YHODRmWMaW<egJ3
+!s100 jbdd>Q>>Z>Pi4SkMMo3[40
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z26 w1695805789
+R3
+R2
+R0
+Z27 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Testbench.vhdl
+Z28 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R17
+!i10b 1
+R18
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Testbench.vhdl|
+Z30 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+V_8RZ35;Hz4dka3e^hOj5S1
+!s100 D6S_MLA6TY^ed:zD0T_g;3
+R6
+31
+R17
+!i10b 1
+R18
+R29
+R30
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L139
+VcHj3PEj10mmW@[`QNj]VF2
+!s100 MBDTezKJ=W7F^Ic`mzad81
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 cHj3PEj10mmW@[`QNj]VF2
+l144
+L143
+VZ=18@nnZg;<U?h72lA<752
+!s100 UjI]YRd>QAY7T3XG]nmL82
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L128
+V64GzR<cXdB_:b>BkdKMGY0
+!s100 PS1I628oWaH<<>A0SLJKC3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 64GzR<cXdB_:b>BkdKMGY0
+l133
+L132
+Vbc?k?Lh[BU]OA:_=<UI1L0
+!s100 @[73iMi=`ib7DoR>h89GJ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity BCD_X is
+port (
+A:  in std_logic_vector(3 downto 0);
+B:  in std_logic_vector(3 downto 0);
+M: IN STD_LOGIC;
+Y: out std_logic_vector(4 downto 0));
+end entity BCD_X;
+architecture Struct of BCD_X is
+signal I,J,K,L,M,C1,C2,C3,C4,Cout : std_logic;
+SIGNAL AX : STD_LOGIC_VECTOR(3 downto 0);
+SIGNAL BX : STD_LOGIC_VECTOR(3 downto 0);
+
+component Full_adder is
+port (A, B, C: in std_logic; Sum, Cout: out std_logic);
+end component Full_adder;
+
+COMPONENT BCD_X is
+port (
+A:  in std_logic_vector(3 downto 0);
+Y: out std_logic_vector(3 downto 0));
+end COMPONENT BCD_X;
+
+begin
+  --component instances
+   xor1: XOR_2 port map(M,B(0),I);
+	fulladder1: Full_adder port map (A0,I,M,S0,C1);
+	xor2: XOR_2 port map(M,B(1),J);
+	fulladder2: Full_adder port map (A1,J,C1,S1,C2);
+	xor3: XOR_2 port map(M,B2,K);
+	fulladder3: Full_adder port map (A2,K,C2,S2,C3);
+	xor4: XOR_2 port map(M,B3,L);
+	fulladder4: Full_adder port map (A3,L,C3,S3,Cout);
+	
+	
+  end Struct;

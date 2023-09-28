@@ -1,0 +1,782 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/simulation/modelsim
+Eand_2
+Z1 w1695882531
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Gates.vhdl
+Z5 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Gates.vhdl
+l0
+L69
+V_k6oDazzb1HG4=<AcHd2:1
+!s100 RZd8H?N1WGUZ1W@delJWd2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1695882738
+!i10b 1
+Z8 !s108 1695882738.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Gates.vhdl|
+Z10 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 _k6oDazzb1HG4=<AcHd2:1
+l74
+L73
+V37SRC3QFkdD5Vb=hMWD=m1
+!s100 FP^SFPKfz?ZV8hzn03Zbj0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_3
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L80
+VYo1hR9A>JaPY5hS]>c8do3
+!s100 5]HXMU_VdVJV94MPGK`Dj0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 and_3 0 22 Yo1hR9A>JaPY5hS]>c8do3
+l85
+L84
+Vi1Wil5CLXzi?eK]QF7ZNI3
+!s100 V[AlSAZ2f9Vz:c7?1`Fbl0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebcd_x
+Z13 w1695808271
+Z14 DPx4 work 5 gates 0 22 Ih?09@CE7e3Fkl7<U`CNN1
+R2
+R3
+R0
+Z15 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl
+Z16 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl
+l0
+L6
+V^0cWh=P4<<S9I9:25zTj<2
+!s100 z6UPIEDiKHk`^IkCm82jD3
+R6
+31
+Z17 !s110 1695882739
+!i10b 1
+Z18 !s108 1695882739.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl|
+Z20 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Midsem/BCD_X.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 5 bcd_x 0 22 ^0cWh=P4<<S9I9:25zTj<2
+l14
+L11
+Vo1=Skz^X[1faEEfjcZ3QL0
+!s100 WG=z=iic9gNBADGj;]Ri<3
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Ebcd_x_add_sub
+Z21 w1695836816
+R14
+R2
+R3
+R0
+Z22 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(b)/BCD_X_Add_Sub.vhdl
+Z23 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(b)/BCD_X_Add_Sub.vhdl
+l0
+L6
+VMId0R;aQz1Ql2o^U[E3K63
+!s100 2=Nzl78T>^zgj084F`fO[2
+R6
+31
+R17
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(b)/BCD_X_Add_Sub.vhdl|
+Z25 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(b)/BCD_X_Add_Sub.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 13 bcd_x_add_sub 0 22 MId0R;aQz1Ql2o^U[E3K63
+l35
+L14
+V2g`]0d5=U65JE28E3oDhR3
+!s100 NAMGRcQnd_VCY@cgM^J=C0
+R6
+31
+R17
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R11
+R12
+Ebcd_x_flag
+Z26 w1695882679
+R14
+R2
+R3
+R0
+Z27 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/BCD_X_Flag.vhd
+Z28 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/BCD_X_Flag.vhd
+l0
+L6
+VMjZecccR?Co9CU=SYBjI02
+!s100 LO6GbWHo_UTe23bWA3d:H3
+R6
+31
+Z29 !s110 1695882740
+!i10b 1
+Z30 !s108 1695882740.000000
+Z31 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/BCD_X_Flag.vhd|
+Z32 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/BCD_X_Flag.vhd|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 10 bcd_x_flag 0 22 MjZecccR?Co9CU=SYBjI02
+l45
+L15
+VOJbQ98VNjU3@S^:coJ2B:1
+!s100 eGWK9z0?;d3]gmjk;M`UC2
+R6
+31
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R11
+R12
+Edut
+Z33 w1695880147
+R2
+R3
+R0
+Z34 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/DUT.vhdl
+Z35 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/DUT.vhdl
+l0
+L7
+V78@3UZSAV2mmdko<NI5?C0
+!s100 mIP3A[D5HH>_C?c]EBe401
+R6
+31
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/DUT.vhdl|
+Z37 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 78@3UZSAV2mmdko<NI5?C0
+l21
+L12
+V@eUKR_YblZIC4V[`>MmU11
+!s100 kUPM`X7VGM7`9zPSXLT<M0
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Efourbitaddersubtractor
+Z38 w1695809732
+R14
+R2
+R3
+R0
+Z39 8D:/IIT-B/E.E. DD/2nd Year/EE 214/4bitAdderSubtractor/FourbitAdderSubtractor.vhdl
+Z40 FD:/IIT-B/E.E. DD/2nd Year/EE 214/4bitAdderSubtractor/FourbitAdderSubtractor.vhdl
+l0
+L6
+Voo4i=E1d_PA=I29]LeT5b2
+!s100 ;d<2U2<j0TXgmjb?QmLQ>3
+R6
+31
+R17
+!i10b 1
+R18
+Z41 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/4bitAdderSubtractor/FourbitAdderSubtractor.vhdl|
+Z42 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/4bitAdderSubtractor/FourbitAdderSubtractor.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 22 fourbitaddersubtractor 0 22 oo4i=E1d_PA=I29]LeT5b2
+l17
+L10
+Vj^Xg_UldSL>Q^gBO;:=[U2
+!s100 Le0cVXO>N@l4kljjF>PAG0
+R6
+31
+R17
+!i10b 1
+R18
+R41
+R42
+!i113 1
+R11
+R12
+Efull_adder
+Z43 w1692004293
+R14
+R2
+R3
+R0
+Z44 8D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab0/Full_Adder.vhd
+Z45 FD:/IIT-B/E.E. DD/2nd Year/EE 214/Lab0/Full_Adder.vhd
+l0
+L6
+V@_j08?<a@n[z25=@D[Z;C3
+!s100 W=S8nZLe^lAEjSif4gG@P2
+R6
+31
+R17
+!i10b 1
+R18
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab0/Full_Adder.vhd|
+Z47 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/Lab0/Full_Adder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 10 full_adder 0 22 @_j08?<a@n[z25=@D[Z;C3
+l13
+L10
+V9_Ql;n?_@71jD?nnGd4Rn0
+!s100 @306zcEc8i[[_XVlDLIZ^3
+R6
+31
+R17
+!i10b 1
+R18
+R46
+R47
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L3
+VIh?09@CE7e3Fkl7<U`CNN1
+!s100 9a7LjdHL4T`EMh8@az;RV3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L180
+V>FMVm8LUo3NEbMdVKX:=H2
+!s100 [nTP`POeCzYh6L6C7IbFL2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 >FMVm8LUo3NEbMdVKX:=H2
+l185
+L184
+VOQnUcRlg]hfB9zM7Md6UE2
+!s100 JA@5TSomnbgRZ_ZnMQEeS1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L57
+V<YhY1FGl2EQ_<ii>6zVP_1
+!s100 @Id^OH?ez;=0^J;IkMHOE2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 <YhY1FGl2EQ_<ii>6zVP_1
+l62
+L61
+VU>m`@aG0@UjZ1cPB5`iQe2
+!s100 Ejo@D^lV8NkD?k:oS6Ffz1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L91
+V@cKO11H2cX8@4mQ`MILgQ1
+!s100 e449Xco:=Rz8K`kXQ^Akf0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 @cKO11H2cX8@4mQ`MILgQ1
+l96
+L95
+VMn7dm>=A]KeEk;:D6@BTO2
+!s100 YH[IX?IK?m3c;DQOPX34T0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L124
+VPkeEEoZ663`e?ZcmS7?NX1
+!s100 d7S;cj6fAaj>Qe3;[0LeZ0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 PkeEEoZ663`e?ZcmS7?NX1
+l129
+L128
+VGkGbkhZ;zcF5O642]M_Zm2
+!s100 Xd9?dZe8Ggo25G[hA<6JM2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_5
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L135
+V6XQXL[ElIDc>D38U7feCO0
+!s100 cRZa]P::f<?b`9dkVdhHz3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_5 0 22 6XQXL[ElIDc>D38U7feCO0
+l140
+L139
+V8^4n2G2Z50bme7Idm@LO=3
+!s100 Iiz4lgPefAcHo_2c2oM3Z0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L102
+VzLhT^Cho0DZGS@eSUL7JP3
+!s100 K8?XKAeoH8Ti^J?Qlk7eW2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 zLhT^Cho0DZGS@eSUL7JP3
+l107
+L106
+V<Oa8=FN9[_Q?WnH798imX1
+!s100 4=iHf0?gTd5o07JVDN:WD3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_3
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L113
+V>6KD5mB8kd3_7e9B`HkDc2
+!s100 eooYKYGR6k>j;iQ1@`O=22
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_3 0 22 >6KD5mB8kd3_7e9B`HkDc2
+l118
+L117
+VL];f53`k>aRBme5hd1Dfe0
+!s100 5jD^i6F>>ZF^ibMRkk@_B1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z48 w1695880051
+R3
+R2
+R0
+Z49 8D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Testbench.vhdl
+Z50 FD:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R29
+!i10b 1
+R30
+Z51 !s90 -reportprogress|300|-93|-work|work|D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Testbench.vhdl|
+Z52 !s107 D:/IIT-B/E.E. DD/2nd Year/EE 214/22B3953_Swarup_Patil/Part(c)/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+VXklnXU^7b6T43YV;J:=SC1
+!s100 ekCEY=ozJKG[3D=zGLojM2
+R6
+31
+R29
+!i10b 1
+R30
+R51
+R52
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L169
+VW`TFX[WBmlS_=5^9P:2`01
+!s100 eoAi^SDo2GMMWM0nQA@2z1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 W`TFX[WBmlS_=5^9P:2`01
+l174
+L173
+VQ3WCh[n>oiG@o:Ig=^;Xo1
+!s100 2?7f=B2Q9@=M9g`gzOTi`0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L147
+V0eLNzz0ikjWkhQKYXG?@51
+!s100 :_k==3c;cFkASKL936_B<3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 0eLNzz0ikjWkhQKYXG?@51
+l152
+L151
+V=PLAAP=n5;PG7<>SSkC[11
+!s100 ID>=oXBb6TT;GQlRWPzK<3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_5
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L158
+VHdDgILPjO]Th37^K4UI?K3
+!s100 k0=AjVZAUOHEIaESlWK450
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_5 0 22 HdDgILPjO]Th37^K4UI?K3
+l163
+L162
+VYaU<gJ;;J^R=`Y[@So38]3
+!s100 9GzW4cg4Cb28jm3Ae@oYC2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
