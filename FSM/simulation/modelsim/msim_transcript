@@ -1,0 +1,71 @@
+# Reading D:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do DUT_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:18:45 on Oct 03,2023
+# vcom -reportprogress 300 -93 -work work D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 18:18:45 on Oct 03,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/FSM.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:18:45 on Oct 03,2023
+# vcom -reportprogress 300 -93 -work work D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/FSM.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity students
+# -- Compiling architecture bhv of students
+# End time: 18:18:45 on Oct 03,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:18:46 on Oct 03,2023
+# vcom -reportprogress 300 -93 -work work D:/IIT-B/E.E. DD/2nd Year/EE 214/FSM/Testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 18:18:46 on Oct 03,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 18:18:46 on Oct 03,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading ieee.numeric_std(body)
+# Loading work.students(bhv)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/seq_instance
+# ** Note: SUCCESS, all tests passed.
+#    Time: 1428 ns  Iteration: 0  Instance: /testbench
+# End time: 18:21:39 on Oct 03,2023, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 1
